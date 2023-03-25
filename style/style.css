@@ -99,7 +99,7 @@ form {
     display: flex;
     flex-direction: column;
     background-color: rgb(238, 238, 238);
-    padding: 25px 15px 0px; 
+    padding: 20px;
     border-radius: 5px;
 }
 
@@ -116,12 +116,19 @@ form p {
     margin-bottom: 30px;
 }
 
-form input {
-    border-radius: 5px;
-    border: none;
+.form-content {
+    padding-bottom: 18px;
+    position: relative;
+}
+
+.form-content input {
+    display: block;
+    width: 90%;
+    border-radius: 8px;
     padding: 15px;
-    margin: 5px;
-    margin-bottom: 1rem;
+    margin: 8px;
+    border: none;
+    margin-left: -2px;
 }
 
 button {
@@ -131,10 +138,27 @@ button {
     padding: 15px;
     text-transform: uppercase;
     color: rgb(238, 238, 238);
+    margin-top: 5px;
 }
 
 button:hover {
     background-color: rgb(28, 212, 111);
+}
+
+.form-content a {
+    position: absolute;
+    
+    left: 0;
+    visibility: hidden;
+}
+
+.form-content.error input {
+    border: 1px solid #ff3b25;
+}
+
+.form-content.error a{
+    color: #ff3b25;
+    visibility: visible;
 }
 
 /* --main-- */

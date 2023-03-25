@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Obra-fácil</title>
 
     <link href="style/style.css" rel="stylesheet">
     <link href="style/media.css" rel="stylesheet">
@@ -43,14 +43,26 @@
             </iframe>
         </div>
 
-        <form method="post">
+        <form id="form"  method="post">
             <h2>Obras <span>Rápidas</span> e <span>baratas!</span></h2>
 
             <p>Somos especialistas em obras, reformas e construção de sonhos.</p>
-                <input type="text" placeholder="Teu nome completo" required />
-                <input type="tel" placeholder="Teu número de telefone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
-                <input type="email" placeholder="Teu e-mail" required />
-                <button type="submit">Fale conosco</button>
+                <div class="form-content">
+                    <input type="text" placeholder="Nome completo" id="nome"/>
+                    <a>aqui vai a mensagem...</a>
+                </div>
+
+                <div class="form-content">
+                    <input type="tel" placeholder="Número de telefone" id="telefone" pattern="[0-9]{10,}"/>
+                    <a>aqui vai a mensagem...</a>
+                </div>
+
+                <div class="form-content">
+                    <input type="email" placeholder="E-mail" id="email"/>
+                    <a>aqui vai a mensagem...</a>
+                </div>
+
+                <button type="submit" id="submit">Fale conosco</button>
             <p>*Obs.: entraremos em contato em até 24 horas.</p>
         </form>
     </main>
@@ -60,5 +72,7 @@
             Todos os direitos reservados Copyright © 2023 Obras Fácil
         </p>
     </footer>
+
+    <script src="form.js"></script>
 </body>
 </html>
